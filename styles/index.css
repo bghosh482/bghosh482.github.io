@@ -177,7 +177,7 @@ header.shadow {
   margin-left: 1rem;
 }
 
-.Skills_heading{
+.Skills_heading {
   display: flex;
   font-weight: bolder;
   padding: 30px;
@@ -189,7 +189,7 @@ header.shadow {
 .Skills_aligner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(2);
+  grid-template-rows: auto;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -198,11 +198,10 @@ header.shadow {
   width: 70%;
 }
 .Skills_aligner > div {
- 
   justify-content: center;
   align-items: center;
-width: 70%;
-padding-top: 20px;
+  width: 70%;
+  padding-top: 20px;
   margin: auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -218,16 +217,82 @@ padding-top: 20px;
   display: flex;
   margin: auto;
 }
-@media all and (min-width: 320px) and (max-width: 767px){
+@media all and (min-width: 320px) and (max-width: 767px) {
   .Skills_aligner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(2);
+
     margin: auto;
     justify-content: space-between;
     justify-items: center;
     gap: 20px;
     /* border: 1px solid red; */
     width: 70%;
+  }
+}
+#Project {
+  width: 95%;
+  margin: auto;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.project-main img {
+  width: 100%;
+}
+.project-section {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: auto;
+  padding: 15px 0px;
+  border-radius: 10px;
+
+  
+}
+
+.project-body {
+  margin-left: 20px;
+}
+.project-social {
+  display: flex;
+  gap: 40px;
+}
+.btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+
+  background-color: aqua;
+  padding: 10px 15px;
+}
+.project-social a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-heading {
+  font-size: 25px;
+  font-weight: bolder;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .project-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
