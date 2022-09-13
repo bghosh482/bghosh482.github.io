@@ -15,7 +15,7 @@
   --bg-color: #fff;
   --text-color: #0f0c27;
   --hover: hsl(260, 100%, 51%);
- 
+
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
@@ -41,7 +41,7 @@ body {
 .heading h2 {
   font-size: 30px;
 }
- 
+
 .heading span {
   font-size: var(--p-font);
   color: rgb(2, 166, 70);
@@ -58,8 +58,7 @@ header {
   background: var(--bg-color);
   padding: 13px 10%;
   transition: 0.2s;
-  box-shadow: -3px -3px 7px #ffffff73,
-				2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
@@ -104,7 +103,8 @@ header.shadow {
   order: 3;
 }
 .home-img img {
-  width: 100%;
+  width: 80%;
+  border-radius: 25px;
 }
 .home-text span {
   font-size: var(--medium-font);
@@ -144,7 +144,6 @@ header.shadow {
 .btn:hover {
   background: var(--hover);
 }
- 
 
 .about-container {
   display: grid;
@@ -152,7 +151,7 @@ header.shadow {
   gap: 1rem;
   margin-top: 2rem;
 }
- 
+
 .about-img img {
   width: 80%;
   border-radius: 0.5rem;
@@ -178,15 +177,57 @@ header.shadow {
   margin-left: 1rem;
 }
 
-.Skills_aligner{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-columns:repeat(2);
+.Skills_heading{
+  display: flex;
+  font-weight: bolder;
+  padding: 30px;
+  font-size: 30px;
   justify-content: center;
-  justify-items: center;
-
+  margin: auto;
 }
-.Skills_aligner img{
+
+.Skills_aligner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2);
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid red; */
+  width: 70%;
+}
+.Skills_aligner > div {
+ 
+  justify-content: center;
+  align-items: center;
+width: 70%;
+padding-top: 20px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Skills_aligner div div {
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+}
+.Skills_aligner img {
   width: 50%;
-  
+  display: flex;
+  margin: auto;
+}
+@media all and (min-width: 320px) and (max-width: 767px){
+  .Skills_aligner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2);
+    margin: auto;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+    width: 70%;
+  }
 }
