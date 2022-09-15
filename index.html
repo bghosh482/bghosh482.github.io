@@ -17,12 +17,12 @@
         <div><a href="#">BUBAI GHOSH</a></div>
       </div>
       <div class="navbar-link">
-        <a  class="link" href="#home">Home</a>
-        <a  class="link" href="#about">About</a>
-        <a  class="link" href="#skills">Skills</a>
-        <a  class="link" href="#Project">Projects</a>
-        <a  class="link" href="#">statictics</a>
-        <a  class="link" href="#">Contact</a>
+        <a class="link" href="#home">Home</a>
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#Project">Projects</a>
+        <a class="link" href="#">statictics</a>
+        <a class="link" href="#">Contact</a>
       </div>
       <div class="menu-icon" id="menu-icon">
         <i class="bx bx-menu"></i>
@@ -67,21 +67,21 @@
         </p>
       </div>
       <div class="about-container">
-      <div class="about-section2">
-        <div>
-          <i class="bx bx-current-location"></i>
-          <p>Malda, West Bengal</p>
-        </div>
-        <div>
-          <i class="bx bxs-phone"></i>
-          <p>+91-7586964553</p>
-        </div>
-        <div>
-          <i class="bx bxs-envelope"></i>
-          <p>bghosh482@gmail.com</p>
+        <div class="about-section2">
+          <div>
+            <i class="bx bx-current-location"></i>
+            <p>Malda, West Bengal</p>
+          </div>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <p>+91-7586964553</p>
+          </div>
+          <div>
+            <i class="bx bxs-envelope"></i>
+            <p>bghosh482@gmail.com</p>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <!-- Skills -->
@@ -216,7 +216,66 @@
         </div>
       </div>
     </div>
+
+    <!-- statictics -->
+
+    <div id="statictics">
+      <div class="static-section">
+        <div class="radius">
+          <p>1200+</p>
+        </div>
+        <div class="static-area">
+          <h4>Hours</h4>
+          <p>of Full Stack coding</p>
+        </div>
+      </div>
+      <div class="static-section">
+        <div class="radius">
+          <p>100+</p>
+        </div>
+        <div class="static-area">
+          <h4>Hours</h4>
+          <p>DSA </p>
+        </div>
+      </div>
+      <div class="static-section">
+        <div class="radius">
+          <p>200+</p>
+        </div>
+        <div class="static-area">
+          <h4>Git</h4>
+          <p>Commit</p>
+        </div>
+      </div>
+      <div class="static-section">
+        <div class="radius">
+          <p>5+</p>
+        </div>
+        <div class="static-area">
+          <h4>Projects</h4>
+          <p>Done</p>
+        </div>
+      </div>
+      <div class="static-section">
+        <div class="radius">
+          <p>100+</p>
+        </div>
+        <div class="static-area">
+          <h4>Hours</h4>
+          <p>of Soft Skill sessons</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
-
+<script>
+  let menu = document.querySelector("#menu-icon");
+  let navbar = document.querySelector(".navbar-link");
+  menu.onclick = () => {
+    navbar.classList.toggle("active");
+  };
+  window.onscroll = () => {
+    navbar.classList.remove("active");
+  };
+</script>
