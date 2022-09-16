@@ -230,6 +230,7 @@ a {
 }
 .Skills_aligner img {
   width: 50%;
+  height: auto;
   display: flex;
   margin: auto;
 }
@@ -261,6 +262,7 @@ a {
 }
 .project-main img {
   width: 100%;
+  height: auto;
 }
 .project-section {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
