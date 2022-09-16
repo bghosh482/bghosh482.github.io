@@ -9,6 +9,9 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
+ 
+ 
+ 
 }
 
 a {
@@ -48,11 +51,13 @@ a {
     top: 10%;
     z-index: 1;
     background-color: white;
-    transition: 0.2s ease;
+   
   }
 }
+
 .active {
   visibility: visible;
+  
 }
 
 #home {
@@ -212,6 +217,10 @@ a {
   margin: auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.2s ease-in-out;
+}
+.Skills_aligner>div:hover{
+  transform: scale(1.2);
 }
 
 .Skills_aligner div div {
@@ -248,6 +257,7 @@ a {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  
 }
 .project-main img {
   width: 100%;
@@ -258,6 +268,7 @@ a {
   padding: 15px 0px;
   border-radius: 10px;
   border: 1px solid red;
+  
 }
 
 .project-body {
@@ -266,6 +277,10 @@ a {
 .project-social {
   display: flex;
   gap: 40px;
+  transition: 0.2s ease-in-out;
+}
+.btn-social:hover{
+  transform: scale(1.2);
 }
 .btn-social {
   display: flex;
@@ -310,8 +325,8 @@ a {
   }
 }
 #statictics{
-background-color: black;
-color: white;
+/* background-color: black; */
+color: black;
 display: flex;
 width: 100%;
 
@@ -320,7 +335,11 @@ justify-content: center;
 align-items: center;
 gap: 30px;
 }
+.radius p{
+  font-size: 25px;
+}
 .static-section{
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -333,7 +352,7 @@ gap: 30px;
   align-items: center;
 }
 .radius{
-  border: 5px solid red;
+  border: 5px solid #2A0861;
   width: 100px;
   height: 100px;
   border-radius: 50%;
