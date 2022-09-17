@@ -202,6 +202,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
   align-items: center;
