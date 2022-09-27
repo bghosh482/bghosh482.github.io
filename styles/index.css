@@ -34,10 +34,10 @@ body {
   border-bottom: 1px solid transparent;
   transition: all 0.4s ease;
 }
-.navbar.sticky{
+.navbar.sticky {
   padding: 10px 16%;
-	background: var(--bg-color);
-	border-bottom: 1px solid #0e1630;
+  background: var(--bg-color);
+  border-bottom: 1px solid #0e1630;
 }
 .navbar-heading a {
   font-size: large;
@@ -105,8 +105,6 @@ body {
   border: 1px solid var(--main-color);
   transition: all 0.4s ease;
 }
-
-
 
 .btn:hover {
   transform: scale(1.01) translateY(-5px);
@@ -182,7 +180,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
-  
+
   padding: 8px 0 15px 0;
   margin: auto;
   border-radius: 15px;
@@ -205,7 +203,7 @@ body {
   display: flex;
   margin: auto;
 }
-.hybernate img{
+.hybernate img {
   width: 100%;
 }
 #Project {
@@ -461,15 +459,14 @@ form textarea {
   border-radius: 0.5rem;
 }
 
-
 /* media screen */
-
 
 @media all and (min-width: 100px) and (max-width: 767px) {
   #menu-icon {
     display: block;
+    
   }
- 
+
   .navbar-link {
     position: absolute;
     top: -600px;
@@ -477,18 +474,20 @@ form textarea {
     left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
 
-    background: white;
     text-align: left;
     transition: all 0.4s ease;
   }
   .navbar-link a {
     display: block;
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 1rem;
   }
   .navbar-link.active {
-    top: 100%;
+    top: 5%;
   }
   :root {
     --h1-font: 3.7rem;
@@ -496,7 +495,7 @@ form textarea {
   }
 }
 
-@media all and (min-width: 100px) and (max-width: 767px) { 
+@media all and (min-width: 100px) and (max-width: 767px) {
   .skills-container {
     /* border: 1px solid red; */
     width: 60vw;
@@ -657,14 +656,13 @@ form textarea {
 @media all and (min-width: 100px) and (max-width: 767px) {
   .home {
     width: 100%;
-    
+
     /* border: 1px solid red; */
     grid-template-columns: repeat(1, 1fr);
-   
+
     gap: 30px;
     justify-content: center;
     align-items: center;
-    
   }
   .home-text h1 {
     margin: 20px 0;
@@ -689,9 +687,7 @@ form textarea {
     width: 85%;
     border-radius: 5rem 5rem;
   }
-
 }
-
 
 @media all and (min-width: 100px) and (max-width: 767px) {
   .about {
