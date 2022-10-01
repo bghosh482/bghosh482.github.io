@@ -322,13 +322,13 @@
       </div>
 
       <div class="contact-form" >
-        <form   onsubmit="sendEmail(); reset();">
+        <form   onsubmit="sendEmail(); reset(); return false;">
           <input type="text" placeholder="Enter Your Name" id="fullName" required />
           <input type="email" placeholder="Enter Your Email" required  id="email_id" />
-          <input type="" placeholder="Enter Your Subject"  id="message"/>
+          <input type="" placeholder="Enter Your Subject"  id="subject"/>
           <textarea
             name=""
-            id=""
+            id="message"
             cols="40"
             rows="10"
             placeholder="Enter Your Message"
