@@ -15,15 +15,22 @@
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('j90oeusn7hQqd-HY5');
+    })();
+</script>
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar">
       <div class="navbar-heading">
-      <a href="#"> B </a>
+      <a href="#home"> B </a>
       </div>
       <div class="navbar-link">
-        <div><a href="#home">Home</a></div>
+        <div><a id="home" href="#home">Home</a></div>
         <div><a href="#about">About</a></div>
         <div><a href="#skills">Skills</a></div>
         <div><a href="#Project">Projects</a></div>
@@ -314,11 +321,11 @@
         </div>
       </div>
 
-      <div class="contact-form">
-        <form action="">
-          <input type="" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
-          <input type="" placeholder="Enter Your Subject" />
+      <div class="contact-form" >
+        <form   onsubmit="sendEmail(); reset();">
+          <input type="text" placeholder="Enter Your Name" id="fullName" required />
+          <input type="email" placeholder="Enter Your Email" required  id="email_id" />
+          <input type="" placeholder="Enter Your Subject"  id="message"/>
           <textarea
             name=""
             id=""
@@ -331,22 +338,29 @@
         </form>
       </div>
     </section>
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+    <a href="#home" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+   
+   
   </body>
 </html>
 
 <script src="./script/index.js"></script>
 
 <script>
-  GitHubCalendar(".calendar", "bghosh482");
 
-  // or enable responsive functionality:
-  GitHubCalendar(".calendar", "bghosh482", { responsive: true });
 
-  // Use a proxy
-  GitHubCalendar(".calendar", "bghosh482", {
-    proxy(bghosh482) {
-      return fetch(`https://your-proxy.com/github?user=${bghosh482}`);
-    },
-  }).then((r) => r.text());
+
+
+
+  // GitHubCalendar(".calendar", "bghosh482");
+
+  // // or enable responsive functionality:
+  // GitHubCalendar(".calendar", "bghosh482", { responsive: true });
+
+  // // Use a proxy
+  // GitHubCalendar(".calendar", "bghosh482", {
+  //   proxy(bghosh482) {
+  //     return fetch(`https://your-proxy.com/github?user=${bghosh482}`);
+  //   },
+  // }).then((r) => r.text());
 </script>

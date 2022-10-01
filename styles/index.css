@@ -349,7 +349,7 @@ body {
 }
 
 .contact {
-  padding: 160px 16% 90px;
+  padding: 120px 16% 90px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

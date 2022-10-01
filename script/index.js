@@ -25,7 +25,24 @@ const sr = ScrollReveal({
 
 sr.reveal(".home-text", { delay: 100, origin: "bottom" });
 
-sr.reveal(".about,.contact,.Skills_container,.project-section,#statictics", {
-  delay: 100,
-  origin: "top",
-});
+sr.reveal(
+  ".Skills_aligner,.home-img,.about,.contact,.Skills_container,.project-section,#statictics",
+  {
+    delay: 300,
+    origin: "top",
+  }
+);
+
+function sendEmail() {
+  let params = {
+    from_name: document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send("service_by4fjus", "template_ymfhbyn", params).then((res) => {
+    alert("Success!");
+   
+  });
+  
+}
