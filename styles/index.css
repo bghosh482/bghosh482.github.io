@@ -51,7 +51,7 @@ body {
 .navbar-link {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  
 }
 .navbar-link a {
   color: var(--second-color);
@@ -96,7 +96,7 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 14px 40px;
+  padding: 14px 20px;
   border-radius: 0.5rem;
   font-size: 17px;
   font-weight: 500;
