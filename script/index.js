@@ -43,7 +43,20 @@ function sendEmail() {
 
   emailjs.send("service_by4fjus", "template_ymfhbyn", params).then((res) => {
     alert("Success!");
-   
   });
-  
 }
+
+let btn = document.getElementById("resdownload");
+btn.addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1vhZHdIXVA0gdvoeyWfBsZh1mcNtbEg_p/view"
+  );
+});
+//resdownload2
+
+let btn2 = document.getElementById("resdownload2");
+btn2.addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1vhZHdIXVA0gdvoeyWfBsZh1mcNtbEg_p/view"
+  );
+});
