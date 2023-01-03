@@ -49,7 +49,7 @@ function sendEmail() {
 let btn = document.getElementById("resdownload");
 btn.addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/1x__qBudhMTHRLvrAkGeX9io__IUeeD-4/view?usp=sharing"
+    "https://drive.google.com/file/d/1x__qBudhMTHRLvrAkGeX9io__IUeeD-4/view"
   );
 });
 //resdownload2
@@ -57,6 +57,6 @@ btn.addEventListener("click", () => {
 let btn2 = document.getElementById("resdownload2");
 btn2.addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/1x__qBudhMTHRLvrAkGeX9io__IUeeD-4/view?usp=sharing"
+    "https://drive.google.com/file/d/1x__qBudhMTHRLvrAkGeX9io__IUeeD-4/view"
   );
 });
