@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-
 }
 :root {
   --bg-color: #020312;
@@ -52,7 +51,6 @@ body {
 .navbar-link {
   display: flex;
   justify-content: space-between;
-  
 }
 .navbar-link a {
   color: var(--second-color);
@@ -207,6 +205,29 @@ body {
 .hybernate img {
   width: 100%;
 }
+#work-main{
+  /* border: 2px solid red; */
+}
+.work-heading{
+  text-align: center;
+  padding-bottom: 15px;
+}
+.work-block{
+  text-align: center;
+  line-height: 
+}
+.work-block p,h3 {
+  padding-bottom: 10px;
+  color: var(--second-color);
+
+}
+.work-block h3{
+  font-size: 20px;
+}
+.work-block p{
+  font-size: 20px;
+}
+
 #Project {
   width: 95%;
   margin: auto;
@@ -349,28 +370,24 @@ body {
   align-items: center;
 }
 
-
-#stats>p{
-
+#stats > p {
   width: 50%;
- 
- margin: auto;
- padding: 5px;
- }
- #stats>p>img{
-   width: 100%;
- 
-   margin-bottom: 20px;
- 
- }
- #stats{
-   
+
+  margin: auto;
+  padding: 5px;
+}
+#stats > p > img {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+#stats {
   display: flex;
- 
+
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
- }
+}
 
 .contact {
   padding: 120px 16% 90px;
@@ -485,11 +502,9 @@ form textarea {
 
 /* media screen */
 
-
 @media all and (min-width: 100px) and (max-width: 767px) {
   #menu-icon {
     display: block;
-    
   }
 
   .navbar-link {
@@ -545,26 +560,23 @@ form textarea {
     border-radius: 25px;
     transition: all 0.4s ease;
   }
-  #stats>p{
-
+  #stats > p {
     width: 90%;
-   
-   margin: auto;
-   }
-   #stats>p>img{
-     width: 100%;
-   
-     margin-bottom: 20px;
-   
-   }
-   #stats{
-     
+
+    margin: auto;
+  }
+  #stats > p > img {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+  #stats {
     display: block;
-   
+
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
-   }
+  }
 }
 
 @media all and (min-width: 100px) and (max-width: 767px) {
@@ -696,8 +708,6 @@ form textarea {
     /* border: 1px solid red; */
     width: 70%;
   }
-
-  
 }
 
 @media all and (min-width: 100px) and (max-width: 767px) {
